@@ -42,7 +42,8 @@ This project implements a 3-tier rule engine application that dynamically create
 1. **Add Rules**: Input rules in the designated field and click the "Add Rule" button to create new eligibility rules.
 2. **Combine Rules**: Click the "Combine Rules" button to merge existing rules into a single rule structure.
 3. **Evaluate User Data**: Enter user data in JSON format and click "Evaluate" to see if the user meets the criteria defined by the combined rules.
- 
+
+## In a typical browser environment, you cannot write directly to files such as JSON for security reasons. Instead, it is common to use localStorage, which simulates file storage by storing data in the browser's memory. However, if you actually want to store JSON files on the client side, you need to download them as files or implement a backend server for persistent storage.
  
  
  ## Result Snapshots
