@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+
+        <!-- Rule Input Section -->
+        <div class="section">
+            <h2>Create Rule</h2>
+            <input type="text" id="ruleInput" placeholder="Enter rule (e.g., age > 30 AND department = 'Sales')">
+            <button onclick="addRule()">Add Rule</button>
+        </div>
+
+        <!-- Display Added Rules -->
+        <div class="section">
+            <h2>Added Rules</h2>
+            <ul id="ruleList"></ul>
+        </div>
+
+        <!-- Combined Rule Section -->
+        <div class="section">
+            <h2>Combined Rule</h2>
+            <button onclick="combineRules()">Combine Rules</button>
+            <p id="combinedRule"></p>
+        </div>
+
+        <!-- User Data Section -->
+        <div class="section">
+            <h2>Enter User Data</h2>
+            <input type="number" id="age" placeholder="Age">
+            <input type="text" id="department" placeholder="Department">
+            <input type="number" id="salary" placeholder="Salary">
+            <input type="number" id="experience" placeholder="Experience">
+            <button onclick="evaluateRules()">Evaluate Rule</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="section">
+            <h2>Result</h2>
+            <p id="result"></p>
+        </div>
+
+        <!-- Download Section -->
+        <div class="section">
+            <h2>Download JSON Files</h2>
+            <button onclick="downloadRules()">Download Rules</button>
+            <button onclick="downloadData()">Download Combined Rule</button>
+            <button onclick="downloadOutput()">Download Output</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
